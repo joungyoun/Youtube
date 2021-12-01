@@ -96,15 +96,23 @@ body > .info {
 
 .info .metadata .titleAndButton .title {
     font-size: var(--font-medium);
+    margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .title .clamp {
     display: -wedkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    margin-right: var(--padding);
 }
 
 .info .metadata .titleAndButton .moreBtn {
     height: 100%;
+    transition: transform 300ms ease-in-out;
+}
+
+.info .metadata .titleAndButton .moreBtn .clicked {
+    transform: rotate(180deg);
 }
 
 .info .views {
@@ -183,7 +191,7 @@ body > .info {
 
 .upNext .item {
     display: flex;
-    margin-top;
+    margin-top: var(--padding);
 }
 
 .upNext .item .img {
@@ -210,4 +218,17 @@ body > .info {
 .upNext .item .info .name,
 .upNext .item .info .views {
     font-size: var(--font-micro);
+    color: var(--grey-dark-color);
+}
+
+.infoAndUpNext {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+    .infoAndUpNext {
+        flex-direction: row;
+        margin: var(--padding);
+    }
 }

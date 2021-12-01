@@ -12,7 +12,9 @@
     <title>Youtube</title>
     <script src="https://kit.fontawesome.com/ec4a77f32e.js" 
     crossorigin="anonymous"></script>
+    <script src="main.js" defer></script>
 </head>
+
 <body>
     <!-- Header -->
     <header>
@@ -30,104 +32,106 @@
         <video controls src="img/video..mp4"></video>
     </section>
 
-    <!-- Video Info -->
-    <section class="info">
-        <!-- Metadata -->
-        <div class="matadata">
-            <ul class="hashtags">
-                <li>#Camping</li>
-                <li>#hiking</li>
-                <li>#Notfollowfad</li>
+<div class="infoAndUpNext">
+        <!-- Video Info -->
+        <section class="info">
+            <!-- Metadata -->
+            <div class="matadata">
+                <ul class="hashtags">
+                    <li>#Camping</li>
+                    <li>#hiking</li>
+                    <li>#Notfollowfad</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp"
+                    > Find an amazing view
+                    </span>
+                    <button class="moreBtn">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </div>
+                <div class="views">
+                    <span class="views">1M views 1 month ago</span>
+                </div>
+            </div>
+            <!-- Action -->
+            <div class="actions">
+                <li><button>
+                    <i class=" active fas fa-thumbs-up"></i>
+                    <span>1K</span>
+                </button>
+            </li>
+                <li><button>
+                    <i class="fas fa-thumbs-down"></i>
+                    <span>0</span>
+                </button>
+            </li>
+                <li><button>
+                    <i class="fas fa-share"></i>
+                    <span>Share</span>
+                </button>
+            </li>
+                <li><button>
+                    <i class="fas fa-plus"></i>
+                    <span>Save</span>
+                </button>
+            </li>
+                <li><button>
+                    <i class="fas fa-flag"></i>
+                    <span>Report</span>
+                </button>
+            </li>
+            </div>
+            <!-- Channel Description -->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="img/avatar.jpg" alt="">
+                    <div class="info">
+                        <span class="name">Notfollowfad</span>
+                        <span class="subscribers">1M subscribers</span>
+                    </div>
+                </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+        </section>
+        <!-- UpNext -->
+        <section class="upNext">
+            <span class="title">Up next</span>
+            <ul>
+                <li class="item">
+                    <div class="img"><img src="img/영흥도.jpg" alt=""></div>
+                    <div class="info">
+                        <span class="title">Yeongheungdo Island  | 영흥도 글램핑 1박 2일 </span>
+                        <span class="name">#Notfollowfad</span>
+                        <span class="views">82K views</span>
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
+                <li class="item">                
+                    <img src="img/동두천.jpg" alt="">
+                    <div class="info">
+                        <span class="title">Dongducheon camping  | 동두천 파인힐 캠핑장  </span>
+                        <span class="name">#Notfollowfad</span>
+                        <span class="views">1004K views</span>
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                <li class="item">
+                    <img src="img/제부도.jpg" alt="">
+                    <div class="info">
+                        <span class="title">Deabudo Ispand  | 대부도 나라펜션 캠핑장 </span>
+                        <span class="name">#Notfollowfad</span>
+                        <span class="views">99K views</span>
+                    </div>
+                    <button class="moreBtn">
+                        <i class="fas fa-ellipsis-v"></i>
+                    </button>
+                </li>
             </ul>
-            <div class="titleAndButton">
-                <span class="title"
-                > Find an amazing view
-                </span>
-                <button class="moreBtn">
-                    <i class="fas fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="views">
-                <span class="views">1M views 1 month ago</span>
-            </div>
-        </div>
-        <!-- Action -->
-        <div class="actions">
-            <li><button>
-                <i class=" active fas fa-thumbs-up"></i>
-                <span>1K</span>
-            </button>
-        </li>
-            <li><button>
-                <i class="fas fa-thumbs-down"></i>
-                <span>0</span>
-            </button>
-        </li>
-            <li><button>
-                <i class="fas fa-share"></i>
-                <span>Share</span>
-            </button>
-        </li>
-            <li><button>
-                <i class="fas fa-plus"></i>
-                <span>Save</span>
-            </button>
-        </li>
-            <li><button>
-                <i class="fas fa-flag"></i>
-                <span>Report</span>
-            </button>
-        </li>
-        </div>
-        <!-- Channel Description -->
-        <div class="channel">
-            <div class="metadata">
-                <img src="img/avatar.jpg" alt="">
-                <div class="info">
-                    <span class="name">Notfollowfad</span>
-                    <span class="subscribers">1M subscribers</span>
-                </div>
-            </div>
-            <button class="subscribe">subscribe</button>
-        </div>
-    </section>
-    <!-- UpNext -->
-    <section class="upNext">
-        <span class="title">Up next</span>
-        <ul>
-            <li class="item">
-                <div class="img"><img src="img/영흥도.jpg" alt=""></div>
-                <div class="info">
-                    <span class="title">Yeongheungdo Island  | 영흥도 글램핑 1박 2일 </span>
-                    <span class="name">#Notfollowfad</span>
-                    <span class="views">82K views</span>
-                </div>
-                <button class="moreBtn">
-                    <i class="fas fa-ellipsis-v"></i>
-                </button>
-            </li>
-            <li class="item">                
-                <img src="img/동두천.jpg" alt="">
-                <div class="info">
-                    <span class="title">Dongducheon camping  | 동두천 파인힐 캠핑장  </span>
-                    <span class="name">#Notfollowfad</span>
-                    <span class="views">1004K views</span>
-                </div>
-                <button class="moreBtn">
-                    <i class="fas fa-ellipsis-v"></i>
-                </button>
-            <li class="item">
-                <img src="img/제부도.jpg" alt="">
-                <div class="info">
-                    <span class="title">Deabudo Ispand  | 대부도 나라펜션 캠핑장 </span>
-                    <span class="name">#Notfollowfad</span>
-                    <span class="views">99K views</span>
-                </div>
-                <button class="moreBtn">
-                    <i class="fas fa-ellipsis-v"></i>
-                </button>
-            </li>
-        </ul>
-    </section>
+        </section>
+</div>
 </body>
 </html>
