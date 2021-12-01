@@ -38,6 +38,7 @@ button:focus {
     cursor: pointer;
     outline: none;
 }
+
 /* Header */
 header {
     display: flex;
@@ -59,7 +60,7 @@ header .icons .fa-search {
     margin: var(--padding);
 }
 
-/* Video */
+/* Video player*/
 
 .player {
     position: sticky;
@@ -75,7 +76,7 @@ header .icons .fa-search {
 
 /* Video Info */
 
-.info {
+body > .info {
     padding: var(--padding);
 }
 
@@ -104,6 +105,109 @@ header .icons .fa-search {
 
 .info .metadata .titleAndButton .moreBtn {
     height: 100%;
-    background-color: transparent;
 }
 
+.info .views {
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+/* Action Button */
+.info .actions {
+    display: flex;
+    justify-content: space-around;
+    margin: var(--padding) 0;
+}
+
+.info .actions button {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+.info .actions button i {
+    margin: 0 auto;
+    margin-bottom: calc(var(--padding)/2);
+    font-size: 16px;
+}
+
+.info .actiion button i.active {
+    color: var(--blue--color);
+}
+
+/* Channel Description */
+.info .channel {
+    display: flex;
+    justify-content: space-between;
+    border-top:  1px solid var(--grey-light-color);
+    border-bottom: 1px solid var(--grey-light-color)
+}
+
+.info .channel .metadata {
+    display: flex;
+    align-items: center;
+}
+
+.info .channel .metadata .info {
+    display: flex;
+    flex-direction: column;
+}
+.info .channel .metadata img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+}
+
+.info .channel .metadata .info .subscribers {
+    font-size: var(--font-small);
+    color: var(--grey-dark-color);
+}
+
+.info .channel .subscribe {
+    text-transform: uppercase;
+    color: var(--red--color);
+    font-size: var(--font-medium);
+}
+
+/* Up Next */
+.upNext {
+    padding: 0 var(--padding);
+}
+
+.upNext > .title {
+    font-size: var(--font-medium);
+    color: var(--grey-dark-color);
+    margin-bottom: calc(var(--paddig) /2);
+}
+
+.upNext .item {
+    display: flex;
+    margin-top;
+}
+
+.upNext .item .img {
+    flex: 1 1 35%;
+    margin-right: var(--padding);
+}
+
+.upNext .item .info {
+    flex: 1 1 60%;
+}
+
+.upNext.item .moreBtn {
+    flex: 1 1 5%;
+}
+.upNext .item .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.upNext .item .info .title {
+    font-size: var(--font-small);
+}
+
+.upNext .item .info .name,
+.upNext .item .info .views {
+    font-size: var(--font-micro);
+}
